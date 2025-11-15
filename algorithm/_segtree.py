@@ -19,7 +19,7 @@ def query(start, end, i, left, right):
     return query(start, mid, i*2, left, right) + query(mid+1, end, i*2+1, left, right)
 
 def update(start, end, i, n, k):
-    if n < start or n > end:
+    if n < start or end < n:
         pass
     elif start == end == n:
         tree[i] = k

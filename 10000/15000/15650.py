@@ -1,0 +1,5 @@
+from itertools import *
+N, M = map(int, input().split())
+A = combinations(range(1, N+1), M)
+for i in A:
+    print(*i)
